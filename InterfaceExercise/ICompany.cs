@@ -11,7 +11,7 @@ namespace InterfaceExercise
         public string Logo { get; set; }
         public string Brand { get; set; }
 
-        public void CompanyInit(string name, string type);
+        public void CompanyBrand();
 
     }
 }

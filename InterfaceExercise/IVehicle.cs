@@ -7,12 +7,12 @@ namespace InterfaceExercise
          * Example: All vehicles have a number of wheels... for now..
          */
         
-        public string Year { get; set; }
+        public int Year { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
-        public string Brakes  { get; set; }
+        public bool allWheelDrive  { get; set; }
         
-        public void VehicleInit(int year, string model, string material, bool antiLock);
+        public void Vehicle(int year, string model, string material, bool allWheelDrive);
         
     }
 }
