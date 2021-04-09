@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace InterfaceExercise
 {
     public interface IVehicle
@@ -10,9 +13,13 @@ namespace InterfaceExercise
         public int Year { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
-        public bool allWheelDrive  { get; set; }
+        public bool AllWheelDrive  { get; set; }
+
+        public void GetInfo();
         
-        public void Vehicle(int year, string model, string material, bool allWheelDrive);
-        
+        public void VehicleType();
+
+        public void build();
+
     }
 }

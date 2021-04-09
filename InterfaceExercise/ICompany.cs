@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace InterfaceExercise
 {
     public interface ICompany
@@ -9,9 +12,9 @@ namespace InterfaceExercise
          */
         
         public string Logo { get; set; }
-        public string Brand { get; set; }
+        public string Moto { get; set; }
 
-        public void CompanyBrand();
+        public void CompanyMoto();
 
     }
 }

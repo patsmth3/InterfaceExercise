@@ -7,12 +7,12 @@ namespace InterfaceExercise
         static void Main(string[] args)
         {
 
-            var car = new Car();
-
-            var truck = new Truck();
-
-            var SUV = new SUV();
-
+            Console.WriteLine("What type of vehicle do you want to build?");
+            string vehicleIn = Console.ReadLine();
+            IVehicle Vehicle = VehicleFactory.GetVehicle(vehicleIn);
+            Vehicle.Build();
+            Console.WriteLine();
+            Vehicle.GetInfo();
         
 
         //In each of your car, truck, and suv classes

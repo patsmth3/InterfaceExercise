@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace InterfaceExercise
 {
@@ -10,10 +11,20 @@ namespace InterfaceExercise
         public int Year { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
+        public bool AllWheelDrive { get; set; }
+        public void Vehicle()
+        {
+            throw new NotImplementedException();
+        }
+
         public bool allWheelDrive  { get; set; }
         
         public string Logo { get; set; }
-        public string Brand { get; set; }
+        public string Moto { get; set; }
+        public void CompanyMoto()
+        {
+            throw new NotImplementedException();
+        }
 
         public void Drive()
         {
@@ -22,7 +33,7 @@ namespace InterfaceExercise
 
         public void CompanyBrand()
         {
-            Console.WriteLine($"{CompanyBrand}")
+            Console.WriteLine($"{Moto}");
         }
     }
 }
